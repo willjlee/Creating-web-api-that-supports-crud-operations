@@ -1,0 +1,15 @@
+Notes: API CRUD tutorial
+http://www.asp.net/web-api/overview/creating-web-apis/creating-a-web-api-that-supports-crud-operations
+
+Covers create, read, update, and delete (CRUD) functions in webAPI
+
+----
+
+HTTP methods: get (read), put (update, sometimes create but not in this example), post (create), delete (delete)
+	nb: 'put' replaces entire entity; need to send entire representation with put. 'patch' method handles partial updates. not covered here.
+
+repository: Removal of data from model class. In this case, moving product data from products class to productrepository class. Normally this would be an external DB.
+
+In controller: methods start with Get, Post, Put, or Delete depending on function
+
+For updating a product: " The id parameter is taken from the URI path, and the product parameter is deserialized from the request body. By default, the ASP.NET Web API framework takes simple parameter types from the route and complex types from the request body."
